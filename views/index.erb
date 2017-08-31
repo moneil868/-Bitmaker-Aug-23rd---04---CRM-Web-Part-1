@@ -1,10 +1,14 @@
-
-<main>
-  <p class="contact_bar">There are <%= @contacts.size %> contacts.</p>
-  <div>
-    <% @contacts.each do |contact| %>
-    <p class="contacts-display"><%= contact.full_name %> (<%= contact.email %>)
-    <br/><a href="/contacts">Edit</a> | <a href="/contacts">Delete</a></p>
-    <% end %>
-  </div>
-</main>
+<p class="contact_bar">There are
+  <%= @contacts.size %>
+  contacts.</p>
+<div>
+  <% @contacts.each do |contact| %>
+  <p class="contacts-display"><%= contact.full_name %>
+    (<%= contact.email %>)
+    <br/>
+    <a href="/contacts">Edit</a>
+    |
+    <a href="/contacts">Delete</a>
+  </p>
+  <% end %>
+</div>
