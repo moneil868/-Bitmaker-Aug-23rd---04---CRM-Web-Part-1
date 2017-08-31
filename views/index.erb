@@ -6,6 +6,8 @@
   <p class="contacts-display"><%= contact.full_name %>
     (<%= contact.email %>)
     <br/>
+    <a href='/contacts/<%= contact[:id] %>'>View</a>
+    |
     <a href="/contacts">Edit</a>
     |
     <a href="/contacts">Delete</a>
